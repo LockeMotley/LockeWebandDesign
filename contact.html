@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Get Started | Locke Web & Design</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="contact-header">
+
+        <nav class="contact-navbar">
+
+            <a href="index.html" class="contact-logo">
+                <img
+                    src="images/logo.png"
+                    alt="Locke Web & Design Logo"
+                >
+            </a>
+
+            <div class="contact-nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="work.html">My Work</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html" class="active">Get Started</a>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="contact-hero">
+
+        <p class="section-label">
+            LET'S CREATE SOMETHING
+        </p>
+
+        <h1>Tell Me About Your Idea</h1>
+
+        <p class="contact-script">
+            I can't wait to hear what you have in mind!
+        </p>
+
+        <p class="contact-intro">
+            Whether you already know exactly what you want or you're
+            not quite sure where to start, tell me a little about your
+            business and your ideas. We can figure out the rest together.
+        </p>
+
+    </section>
+
+
+    <!-- CONTACT FORM SECTION -->
+    <section class="contact-section">
+
+        <div class="contact-form-container">
+
+            <div class="form-heading">
+
+                <p class="section-label">
+                    GET STARTED
+                </p>
+
+                <h2>Let's Talk About Your Website</h2>
+
+                <p>
+                    Fill out what you can below. You don't need to have
+                    every detail figured out yet!
+                </p>
+
+            </div>
+
+
+            <!--
+                IMPORTANT:
+                Replace YOUR-FORMSPREE-ID below with the ID
+                Formspree gives you for this form.
+            -->
+
+            <form
+                action="https://formspree.io/f/YOUR-FORMSPREE-ID"
+                method="POST"
+                class="contact-form"
+            >
+
+                <!-- NAME -->
+                <div class="form-group">
+                    <label for="name">
+                        Your Name <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Your name"
+                        required
+                    >
+                </div>
+
+
+                <!-- BUSINESS NAME -->
+                <div class="form-group">
+                    <label for="business">
+                        Business / Company Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="business"
+                        name="business"
+                        placeholder="Your business name"
+                    >
+                </div>
+
+
+                <!-- EMAIL + PHONE -->
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="(555) 555-5555"
+                        >
+                    </div>
+
+                </div>
+
+                <p class="contact-method-note">
+                    Please provide at least one way for me to contact you —
+                    email or phone number.
+                </p>
+
+
+                <!-- BUSINESS TYPE -->
+                <div class="form-group">
+
+                    <label for="business-type">
+                        What type of business do you have?
+                    </label>
+
+                    <input
+                        type="text"
+                        id="business-type"
+                        name="business-type"
+                        placeholder="Construction, farm, salon, small business, etc."
+                    >
+
+                </div>
+
+
+                <!-- WHAT THEY NEED -->
+                <div class="form-group">
+
+                    <label for="project-type">
+                        What are you looking for? <span>*</span>
+                    </label>
+
+                    <select
+                        id="project-type"
+                        name="project-type"
+                        required
+                    >
+
+                        <option value="" disabled selected>
+                            Choose an option
+                        </option>
+
+                        <option value="new-website">
+                            A brand new website
+                        </option>
+
+                        <option value="website-redesign">
+                            Redesign an existing website
+                        </option>
+
+                        <option value="website-updates">
+                            Updates to a website
+                        </option>
+
+                        <option value="not-sure">
+                            I'm not sure yet
+                        </option>
+
+                        <option value="other">
+                            Something else
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- DETAILS -->
+                <div class="form-group">
+
+                    <label for="details">
+                        Tell me about your idea! <span>*</span>
+                    </label>
+
+                    <textarea
+                        id="details"
+                        name="details"
+                        rows="7"
+                        placeholder="Tell me about your business, what you'd like your website to include, any ideas you already have, or anything else you'd like me to know..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- CURRENT WEBSITE -->
+                <div class="form-group">
+
+                    <label for="current-website">
+                        Do you already have a website?
+                    </label>
+
+                    <input
+                        type="text"
+                        id="current-website"
+                        name="current-website"
+                        placeholder="Paste the link here if you have one"
+                    >
+
+                </div>
+
+
+                <!-- SUBMIT -->
+                <div class="form-submit">
+
+                    <button
+                        type="submit"
+                        class="contact-submit-button"
+                    >
+                        Send My Website Idea →
+                    </button>
+
+                    <p>
+                        I'll get back to you as soon as possible! 😊
+                    </p>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHAT HAPPENS NEXT -->
+    <section class="after-contact">
+
+        <div class="after-contact-heading">
+
+            <p class="section-label">
+                WHAT HAPPENS NEXT?
+            </p>
+
+            <h2>We'll Take It From Here.</h2>
+
+        </div>
+
+
+        <div class="after-contact-steps">
+
+            <div class="after-step">
+
+                <span>01</span>
+
+                <h3>You Send Your Idea</h3>
+
+                <p>
+                    Tell me what you're thinking, even if it's
+                    only the beginning of an idea.
+                </p>
+
+            </div>
+
+
+            <div class="after-step">
+
+                <span>02</span>
+
+                <h3>I'll Reach Out</h3>
+
+                <p>
+                    We'll talk about your business, what you need,
+                    and what you want your website to feel like.
+                </p>
+
+            </div>
+
+
+            <div class="after-step">
+
+                <span>03</span>
+
+                <h3>We'll Make a Plan</h3>
+
+                <p>
+                    Once I understand the project, I'll put together
+                    a plan and personalized quote for your website.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL MESSAGE -->
+    <section class="contact-bottom">
+
+        <img
+            src="images/logo.png"
+            alt="Locke Web & Design Logo"
+        >
+
+        <h2>Have an idea? Send it my way.</h2>
+
+        <p class="contact-bottom-script">
+            Your business. Your vision. Your website.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="contact-footer">
+
+        <p class="contact-footer-name">
+            Locke Web & Design
+        </p>
+
+        <p>
+            Designed with care for small businesses with big ideas.
+        </p>
+
+    </footer>
+
+
+    <!-- REQUIRE EMAIL OR PHONE -->
+    <script>
+
+        const contactForm =
+            document.querySelector(".contact-form");
+
+        contactForm.addEventListener("submit", function(event) {
+
+            const email =
+                document.getElementById("email").value.trim();
+
+            const phone =
+                document.getElementById("phone").value.trim();
+
+            if (!email && !phone) {
+
+                event.preventDefault();
+
+                alert(
+                    "Please provide either an email address or phone number so I can get back to you."
+                );
+
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>
